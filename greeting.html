@@ -17,13 +17,27 @@
            return (
              <div>
                <h1>Hello World!</h1>
+			   <h3>Does this also display on the browser?</h3>
+			   <h3>It does! But I also noticed that auto complete does not work in VS code while using React at least at this point.</h3>
              </div>
            );
          }
        }
  
+	   class Hello extends React.Component {
+		   render() {
+			   return (
+				   <div>
+					<p>This is a test to see if you can have two renders</p>
+					<p>I guess the answer is no for at least using this syntax</p>
+				   </div>
+			   );
+		   }
+	   }
+
        ReactDOM.render(
-         <Greeting />, document.getElementById('app')
+         <Greeting />, <Hello />, document.getElementById('app')
+		 <Hello />, document.getElementById('app')
        );
     </script>
   </body>
