@@ -17,14 +17,16 @@
          render() {
            return (
              <div>
-			   <h1>Hello {this.props.name}!</h1>
+			          <h1>Hello{this.props.name}!</h1>
              </div>
            );
          }
        }
  
        ReactDOM.render(
-		 <Greeting name="Nathan Wilson" />, document.getElementById('app')
+         <div>
+           <Greeting />
+         </div>,  document.getElementById('app')
        );
 
     </script>
